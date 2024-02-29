@@ -7,8 +7,7 @@ const App = () => {
 
   const [playerMove, setPlayerMove] = useState("x")
 
-  // const [playerOne, setPlayerOne] = useState("x")
-  // const [playerTwo, setPlayerTwo] = useState("o")
+ 
 
   const moveStatus = () => {
     setPlayerMove(playerMove === "x" ? "o" : "x")
@@ -19,13 +18,8 @@ const App = () => {
     if(squares[currentSquare]=== null ) {
        squares[currentSquare] = playerMove
        moveStatus()
-          setSquares([...squares])
-    } else if(playerMove) {
-            squares[currentSquare] = "〇"
-              setSquares([...squares])
-    } else {
-      squares[currentSquare] = "Player has already moved there"
-          setSquares([...squares])
+         
+   
       }
     }
 
