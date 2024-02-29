@@ -1,5 +1,20 @@
+h1 {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 610px;
+  margin: auto;
+}
+
 .square {
   border: 2px solid black;
-  height: 100px;
-  width: 100px;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+
 }
+
+
