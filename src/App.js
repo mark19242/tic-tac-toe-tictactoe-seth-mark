@@ -5,21 +5,22 @@ import './App.css'
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
 
-  // const [moveStatus, setMovestatus] = useState("x")
+  const [playerMove, setPlayerMove] = useState("x")
 
-  const [playerOne, setPlayerOne] = useState("x")
-  const [playerTwo, setPlayerTwo] = useState("o")
+  // const [playerOne, setPlayerOne] = useState("x")
+  // const [playerTwo, setPlayerTwo] = useState("o")
 
-  // const playerMove = () => {
-  //   setMovestatus(moveStatus === "x" ? "o" : "x")
-  // }
+  const moveStatus = () => {
+    setPlayerMove(playerMove === "x" ? "o" : "x")
+  }
 
 
   const handleGamePlay = (currentSquare) => {
-    if(playerOne % 2 === 0) {
-      squares[currentSquare] = "❌"
+    if(squares[currentSquare]=== null ) {
+       squares[currentSquare] = playerMove
+       moveStatus()
           setSquares([...squares])
-    } else if(playerTwo % 2 !== 0) {
+    } else if(playerMove) {
             squares[currentSquare] = "〇"
               setSquares([...squares])
     } else {
