@@ -1,5 +1,5 @@
 html, body {
-  height: 100%; /* Ensure the full height is taken */
+  height: 100vh; /* Ensure the full height is taken */
   margin: 0; /* Remove default margin */
 }
 
@@ -17,6 +17,7 @@ h1 {
   
   text-align: center;
   font-size: 5em;
+  margin-top: 5px;
   /* color: rgb(46, 149, 6); /* White text color */
   /* text-shadow: 0 0 60px rgb(166, 255, 0, 1);  */
   color: #fff;
@@ -63,7 +64,7 @@ p {
   font-size: 15px;
   width: 15em;
   height: 3em;
-  margin-left: 820px;
+  margin-left: 585px;
   margin-top: 15px;
   border-radius: 5px;
   background-color: rgb(46, 149, 6);
